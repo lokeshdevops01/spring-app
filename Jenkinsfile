@@ -9,5 +9,10 @@ pipeline {
 				sh 'mvn clean package'
 			}
 		}
+		stage('docker build'){
+			steps{
+				sh 'docker build -t lokeshdevops01/spring-app .'
+			}
+		}
 	}
 }
