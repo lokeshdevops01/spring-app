@@ -11,7 +11,7 @@ pipeline {
 		}
 		stage('docker build'){
 			steps{
-				sh 'docker build -t lokeshdevops01/spring-app .'
+				sh '/usr/bin/docker build -t lokeshdevops01/spring-app .'
 			}
 		}
 	}
